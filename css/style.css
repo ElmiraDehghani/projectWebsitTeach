@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --redius:0.50rem;
+    --redius-lg:0.75rem;
+    --shadow:2px 2px 4px gray; 
+    --bg-color: #ddd;
+    --color1:#F3EEEA;
+    --color2:#EBE3D5;
+    --color3:#B0A695;
+    --color4:#776B5D;
+    --color5:#504a41;
+    --color6: #775D77;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+   background-color: var(--color1);
+}
+small{
+    font-size: 50%;
+}
+a{
+    text-decoration: none;
+}
+/*nav*/
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+nav{
+    background-color: var(--color2);
+}
+.nav-item a, nav a{
+    color: var(--color4);
+}
+.nav-item a:hover{
+    color: var(--color3);
+}
+.active{
+    color: var(--color3) !important;
+}
+.navbar-brand:hover{
+    color: var(--color4);
+}
+.navbar .nav-link span{
+    right: -.60rem;
+    top: 0.2rem;
+    padding: 0.2rem 0.4rem;
+}
+
+
+
+/*section1*/
+.btn-panel{
+  background-color:var(--color6);
+  color: var(--color2);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: var(--redius-lg);
+  box-shadow:var(--shadow) ;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-panel:hover{
+ opacity: 0.8;
+
+}
+.text{
+    line-height: 1.9;
+}
+.baner-img{
+    clip-path: polygon(11% 5%, 100% 0%, 92% 100%, 0% 100%);
+    object-fit: contain;
+}
+
+/*section2*/
+.row{
+    margin:0 3rem;
+}
+.map-item{
+    margin: auto;
+    width: 120px ;
+    height: 120px;
+    padding: 1rem;
+}
+.map-item img{
+    width: 10px;
+    height: 90px;
+}
+.title-site{
+    color: var(--color4);
+}
+
+/*section3*/
+.title-site2{
+    color: var(--color1);
+}
+.slick-prev::before, .slick-next::before
+{
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color:var(--color5) !important;
+}
+.box-course{
+background-color: var(--color3);
+border-radius: var(--redius-lg);
+padding: 1rem 2.5rem;
+}
+
+.card-content {
+    color: var(--color5);
+    transition: all 0.3s;
+}
+.card{
+    height: 350px;
+    margin: 0 5px;
+    direction: rtl;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color3);
+    transition: 0.8s ease-in-out;
+    clip-path: polygon(0 0, 100% 0%, 100% 0, 59% 0, 0 0);
+    z-index: 0;
+}
+.card:hover::before{
+    clip-path: polygon(0 0, 100% 0%, 100% 54%, 100% 76%, 0 53%);
+}
+.card-img{
+    border-radius:10px;
+    object-fit: cover;
+    height: 200px;
+    margin-top: 10px; 
+    transition: height 1s;
+}
+.card:hover .card-img{
+    height: 130px;
+    margin-top: 0;
+    width: 62%;
+}
+.card:hover .card-content h5{
+    color: var(--color1);
+    text-align: right !important;
+}
+.card:hover{
+    background-color: var(--color1);
+border: 1px solid var(--color2) !important;
+}
+.card-content:hover .card-info{
+    display: block !important;
+}
+.card a{
+    color: var(--color5);
+}
+.card{
+    border: 0 !important;
+}
+
+.slick-dots li button::before {
+ 
+    font-size: 21px;}
+@media(max-width:992px) {
+  
+   .sub{
+    font-size: 14px ;
+   }
+}
+@media(max-width:780px) {
+  
+   .sub{
+    font-size: 10px ;
+   }
+}
+@media(max-width:665px) {
+  
+   .sub{
+    padding: .25rem .75rem;
+   }
+   .fs-6{
+    font-size:.85rem !important;
+   }
+  
+}
